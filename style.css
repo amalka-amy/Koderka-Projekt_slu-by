@@ -1,0 +1,346 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+:root {
+    --blue: #407BFF;
+    --white: #FFFFFF; 
+    --black: #000000;
+    --grey: #8B8B8B;
+    --thin:300;
+    --regular: 400;
+    --medium:500;
+    background: #FAFAFA;
+}
+
+.max_width{
+    display:grid;
+    grid-template-columns: 1fr;
+    max-width: 460px;
+}
+
+.linka{
+    width: 60px;
+    height: 2px;
+    margin: 0px;
+    border: 1px solid var(--blue);
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+
+h1{
+    font-size:28px;
+    font-family: 'Montserrat';
+    font-weight: var(--medium);
+    color:var(--black);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:40px;
+}
+
+h2{
+    font-size:15px;
+    font-family: 'Montserrat';
+    font-weight: var(--medium);
+    color:var(--black);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom:17px;
+}
+
+p{
+    font-family: 'Montserrat'; 
+}
+
+.uvod_obrazek{
+    justify-content: center;
+    display:flex;
+}
+
+.uvod_text{
+    justify-content: center;
+}
+
+.bezny_text{
+    font-size:16px;
+    font-weight: var(--thin);
+    color: var(--grey);
+    margin-top:17px;
+    margin-bottom: 30px;
+    margin-top:0px;
+    text-align: center;
+}
+
+.text_tlacitko{
+    font-size: 14px;
+    border-radius: 20px;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--blue);
+    padding: 10px;
+    width:195px;
+    margin:0px;
+    text-align: center;
+
+}
+
+.tlacitka{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+.tlacitko{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.sede{
+    background-color: var(--grey);
+    width: 220px;
+}
+
+.sluzby{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top:28px;
+}
+
+.sluzba{
+    display:flex;
+
+    align-items: center;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+    height: 80px;
+    padding:20px;
+    justify-content: space-between;
+}
+
+.sluzba_obrazek{
+    display:inline-block;
+    max-width: 40px;
+}
+
+.sluzba_text{
+    display:inline-block;
+    font-size:13px;
+    color:var(--grey);
+    font-weight: var(--thin);
+    width: 346px;
+}
+
+.stred_mobil{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.delegati{
+    margin-bottom:55px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1100px){
+    .max_width{
+        max-width: 730px;
+    }
+
+    .cestovatel{
+        max-width: 400px;
+    }
+
+    h1{
+        margin-top: 30px;
+    }
+
+    h2{
+        margin-top: 80px;
+        margin-bottom:17px;
+        text-align: center;
+    }
+
+    .bezny_text{
+        max-width: 550px;
+        text-align:center;
+
+    }
+
+    .tlacitka{
+        display:flex;
+        flex-direction: row;
+        gap:20px;
+        max-width: 445px;
+
+    
+    }
+
+    .tlacitko{
+        display:block;
+    }
+
+    .stred_tablet{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .sluzba{
+        flex-direction: column;
+        height: 172px;
+        width:220px;
+        margin-top:10px;
+        padding:0px;
+        justify-content:stretch;
+    }
+
+    .sluzby{
+        flex-direction:row;
+    }
+
+    .sluzba_text{
+        max-width: 200px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .sluzba_obrazek{
+        margin-top: 40px;
+        margin-bottom:20px;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 1100px){
+
+
+    .max_width{
+        max-width: 1040px;
+        display:flex;
+        flex-direction: column;
+        row-gap: 80px;
+        column-gap: 60px;
+    }
+
+    h1, h2{
+        text-align: left;
+    }
+
+
+    .tlacitka{
+        column-gap: 10px;
+    }
+
+    .uvod_obrazek{
+        width: 490px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .cestovatel{
+        max-width: 425px;
+
+    }
+
+    .section_uvod{
+        display: flex;
+        flex-direction: row;
+        flex-direction: row-reverse;
+    }
+    .uvod_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .linka{
+        margin-left:0px;
+    }
+
+    .bezny_text{
+        max-width: 488px;
+        text-align: left;
+    }
+    
+    .text_tlacitko{
+        text-align: center;
+    }
+
+    .tlacitka{
+        display: flex;
+        flex-direction: row;
+        row-gap: 20px;
+        margin-left:0px;
+        
+    }
+
+    .tlacitko{
+        display:inline-block;
+        margin-left: 0px;
+        
+    }
+    .stred_pc{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .kancelar{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+    }
+    
+    .kancelar_text{
+        max-width: 430px;
+        justify-content: center;
+    }
+
+    .kancelar_sluzby{
+        max-width: 550px;
+        justify-content: space-between;
+        margin:0px;
+    }
+
+    .delegati{
+        display: flex;
+        gap:60px;
+    }
+    .sluzba{
+        flex-direction: column;
+        height: 191px;
+        width:170px;
+        margin-top:10px;
+        padding:0px;
+        justify-content:stretch;
+    }
+
+    .sluzby{
+        flex-direction:row;
+        margin:0px;
+    }
+
+    .sluzba_text{
+        max-width: 140px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .sluzba_obrazek{
+        margin-top: 40px;
+        margin-bottom:20px;
+    }
+
+    .section_sluzby{
+        display: flex;
+        flex-direction: column;
+        row-gap: 80px;
+        column-gap: 60px;
+    }
+
+
+
+
+
+}
