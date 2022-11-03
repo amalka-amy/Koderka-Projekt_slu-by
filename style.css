@@ -9,6 +9,7 @@ html { box-sizing: border-box; }
     --regular: 400;
     --medium:500;
     background: #FAFAFA;
+    font-family: 'Montserrat'; 
 }
 
 .max_width{
@@ -44,10 +45,6 @@ h2{
     text-align: center;
     margin-top: 60px;
     margin-bottom:17px;
-}
-
-p{
-    font-family: 'Montserrat'; 
 }
 
 .uvod_obrazek{
@@ -275,7 +272,6 @@ p{
         margin-left:0px;
         
     }
-
     .tlacitko{
         display:inline-block;
         margin-left: 0px;
